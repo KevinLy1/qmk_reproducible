@@ -1,0 +1,11 @@
+services:
+  vial:
+    image: vial-qmk:20260613
+    container_name: vial-qmk
+    volumes:
+      - ./keyboards:/vial/keyboards
+      - ./output:/vial/output
+    working_dir: /vial
+    tty: true
+    stdin_open: true
+    command: tail -f /dev/null

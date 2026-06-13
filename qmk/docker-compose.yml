@@ -1,0 +1,11 @@
+services:
+  qmk:
+    image: qmk_firmware:20260613
+    container_name: qmk_firmware
+    volumes:
+      - ./keyboards:/qmk/keyboards
+      - ./output:/qmk/output
+    working_dir: /qmk
+    tty: true
+    stdin_open: true
+    command: tail -f /dev/null
