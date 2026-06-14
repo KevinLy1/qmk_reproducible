@@ -5,6 +5,9 @@ These snapshots ensure that even years from now, you can still compile firmware 
 
 The goal is simple: if in future you get lazy or busy, everything will still work.
 
+QMK Repository: https://github.com/qmk/qmk_firmware  
+Vial-QMK Repository: https://github.com/vial-kb/vial-qmk
+
 ## Why Freeze QMK and Vial?
 
 Because QMK and Vial move fast:
@@ -37,15 +40,12 @@ Load the image, compile, done.
 
 ## Using the Snapshots
 
-Read the README.md in qmk and vial-qmk folders.
-
+Read the README.md in qmk and vial-qmk folders.  
 Use whichever one works best for your keyboard.
 
 ## Long-Term Philosophy
 
-This project exists for one reason:
-
-If one wants to be able to compile my keyboards in 5, 10, or 20 years without fighting the tools.
+This project exists for one reason: if one wants to be able to compile the current keyboard firmwares in 5, 10, or 20 years without fighting the tools.
 
 Snapshots are:
 
@@ -53,3 +53,23 @@ Snapshots are:
 - versioned
 - reproducible
 - portable
+
+## Snapshot references for this branch
+
+### QMK Firmware
+QMK Firmware tag 0.33.7: https://github.com/qmk/qmk_firmware/releases/tag/0.33.7  
+or my fork: https://github.com/KevinLy1/qmk_firmware/tree/20260613
+
+### Vial (QMK fork)
+
+`vial` branch of Vial QMK (as of June 13, 2026): https://github.com/vial-kb/vial-qmk  
+or my fork: https://github.com/KevinLy1/vial-qmk/tree/20260613
+
+### Vial GUI
+
+Compatible with vial-gui v0.7.5: https://github.com/vial-kb/vial-gui/releases/tag/v0.7.5  
+or my forked release: https://github.com/KevinLy1/vial-gui/releases/tag/v0.7.5
+
+## Additional reference
+
+Old firmware releases: https://github.com/KevinLy1/qmk_firmware/releases

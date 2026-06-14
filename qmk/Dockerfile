@@ -23,6 +23,6 @@ RUN pip3 install --no-cache-dir qmk --break-system-packages
 
 WORKDIR /qmk
 
-RUN git clone https://github.com/qmk/qmk_firmware . && git submodule update --init --recursive
+RUN git clone --depth 1 -b 20260613 https://github.com/KevinLy1/qmk_firmware.git . && git submodule update --init --recursive
 
 CMD ["tail", "-f", "/dev/null"]

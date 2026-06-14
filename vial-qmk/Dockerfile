@@ -23,6 +23,6 @@ RUN pip3 install --no-cache-dir qmk --break-system-packages
 
 WORKDIR /vial
 
-RUN git clone https://github.com/vial-kb/vial-qmk . && make git-submodule
+RUN git clone --depth 1 -b 20260613 https://github.com/KevinLy1/vial-qmk . && make git-submodule
 
 CMD ["tail", "-f", "/dev/null"]

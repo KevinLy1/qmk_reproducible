@@ -32,11 +32,14 @@ The full Vial-QMK source tree remains inside the image and is never overwritten.
 Inside the container:
 
     cd /vial
-    make <keyboard>:<keymap>
+
+Then:
+
+    qmk compile -kb <keyboard> -km <keymap>
 
 Example:
     
-    make keygem/kg60ansiso:custom
+    make keygem/kg60ansiso:vial
 
 The firmware will be generated in:
 
@@ -55,7 +58,8 @@ Your compiled .bin or .hex files will be available in the `output` folder.
 
 This section is provided for reference only.  
 In normal usage, you do not need to rebuild the image unless you want to create a new snapshot.  
-That is the purpose of the Dockerfile.  
+That is the purpose of the Dockerfile.
+
 Below is an example for a snapshot dated June 13th, 2026:
 
     docker build --no-cache -t vial-qmk:20260613 .
