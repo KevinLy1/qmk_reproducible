@@ -68,8 +68,22 @@ or my fork: https://github.com/KevinLy1/vial-qmk/tree/20260613
 ### Vial GUI
 
 Compatible with vial-gui v0.7.5: https://github.com/vial-kb/vial-gui/releases/tag/v0.7.5  
-or my forked release: https://github.com/KevinLy1/vial-gui/releases/tag/v0.7.5
+or: https://github.com/KevinLy1/vial-gui/releases/tag/v0.7.5
+
+### VIA Web App
+As of June 13th, 2026, compatible with the VIA web app on https://usevia.app/ (https://github.com/the-via/app)  
+Forked branch: https://github.com/KevinLy1/via-app/tree/20260613
+
+
+### VIA-Desktop (Offline)
+
+Compatible with offline VIA: https://github.com/cebby2420/via-desktop/releases/tag/v2026.5.18  
+or: https://github.com/KevinLy1/via-desktop/releases/tag/v2026.5.18
 
 ## Additional reference
 
 Old firmware releases: https://github.com/KevinLy1/qmk_firmware/releases
+
+## Note for small EEPROM boards and Vial
+Some boards use the ATmega32U4 chip and have a small EEPROM. Firmwares for Vial-QMK were not port for these boards, as it usually requires sacrificing many other features.
+Using VIA, plain QMK, or offline VIA is an option.
