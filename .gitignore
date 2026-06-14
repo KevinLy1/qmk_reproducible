@@ -1,5 +1,4 @@
-/qmk/keyboards
 /qmk/output
-/vial-qmk/keyboards
 /vial-qmk/output
-*.tar
+/qmk/*.tar
+/vial-qmk/*.tar

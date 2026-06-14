@@ -58,7 +58,7 @@ In normal usage, you do not need to rebuild the image unless you want to create 
 That is the purpose of the Dockerfile.  
 Below is an example for a snapshot dated June 13th, 2026:
 
-    docker build -t qmk_firmware:20260613 .
+    docker build --no-cache -t qmk_firmware:20260613 .
     docker save -o qmk_firmware_20260613.tar qmk_firmware:20260613
 
 Update the docker-compose.yml file to match the new tag.  

@@ -12,9 +12,11 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     ca-certificates \
     gcc-arm-none-eabi \
     binutils-arm-none-eabi \
+    libnewlib-arm-none-eabi \
     gcc-avr \
     binutils-avr \
     avr-libc \
+    dfu-util \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install --no-cache-dir qmk --break-system-packages
