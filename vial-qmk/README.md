@@ -35,7 +35,7 @@ Inside the container:
 
 Then:
 
-    qmk compile -kb <keyboard> -km <keymap>
+    make <keyboard>:vial
 
 Example:
     
