@@ -49,6 +49,7 @@ Copy it to the shared output folder:
 
     cp /qmk/*.bin /qmk/output/ 2>/dev/null || true
     cp /qmk/*.hex /qmk/output/ 2>/dev/null || true
+    cp /qmk/*.uf2 /qmk/output/ 2>/dev/null || true
 
 ## Recover Firmware
 

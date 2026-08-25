@@ -49,6 +49,7 @@ Copy it to the shared output folder:
 
     cp /vial/*.bin /vial/output/ 2>/dev/null || true
     cp /vial/*.hex /vial/output/ 2>/dev/null || true
+    cp /vial/*.uf2 /vial/output/ 2>/dev/null || true
 
 ## Recover Firmware
 
