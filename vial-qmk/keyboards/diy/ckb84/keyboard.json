@@ -17,29 +17,47 @@
   "features": {
     "bootmagic": true,
     "extrakey": true,
+    "mousekey": true,
     "nkro": true,
-    "rgblight": true
-  },
-  "rgblight": {
-    "hue_steps": 10,
-    "saturation_steps": 10,
-    "brightness_steps": 10,
-    "led_count": 84,
-    "animations": {
-      "breathing": true,
-      "rainbow_mood": true,
-      "rainbow_swirl": true,
-      "snake": true,
-      "knight": true,
-      "christmas": true,
-      "static_gradient": true,
-      "alternating": true,
-      "twinkle": true
-    }
+    "rgb_matrix": true
   },
   "ws2812": {
     "pin": "GP9",
     "driver": "vendor"
+  },
+  "rgb_matrix": {
+    "animations": {
+        "breathing": true,
+        "band_spiral_val": true,
+        "cycle_all": true,
+        "cycle_left_right": true,
+        "cycle_up_down": true,
+        "cycle_out_in": true,
+        "cycle_out_in_dual": true,
+        "rainbow_moving_chevron": true,
+        "cycle_pinwheel": true,
+        "cycle_spiral": true,
+        "dual_beacon": true,
+        "raindrops": true,
+        "jellybean_raindrops": true,
+        "pixel_rain": true,
+        "typing_heatmap":true,
+        "digital_rain": true,
+        "solid_reactive_simple": true,
+        "solid_reactive_multiwide": true,
+        "solid_reactive_multinexus": true,
+        "splash": true,
+        "solid_splash": true
+    },
+    "driver": "ws2812",
+    "pin": "GP9",
+    "led_count": 84,
+    "max_brightness": 200,
+    "hue_steps": 20,
+    "sat_steps": 20,
+    "speed_steps": 20,
+    "val_steps": 20,
+    "sleep": true
   },
   "dynamic_keymap": {
     "layer_count": 5
